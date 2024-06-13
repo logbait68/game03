@@ -1,7 +1,6 @@
 import tkinter as tk
 import random
 
-# グローバル変数
 CELL_SIZE = 30
 COLS = 10
 ROWS = 20
@@ -28,7 +27,7 @@ class Tetris:
         self.board = [[0] * COLS for _ in range(ROWS)]
         self.score = 0
         self.level = 1
-        self.speed = 500
+        self.speed = 250
         self.current_shape = self.new_shape()
         self.next_shape = self.new_shape()
         self.game_over = False
